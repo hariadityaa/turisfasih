@@ -140,6 +140,10 @@
     "separator": {
       "type": "string"
     },
+    "nativeSeparator": {
+      "type": "string",
+      "description": "Put between native parts and between a quantity and its multiplier, e.g. \" \" for \"dua puluh lima ribu\". Readings then use separator in those places too. Omit to join native parts with no gap."
+    },
     "priceDrill": {
       "type": "object",
       "additionalProperties": false,

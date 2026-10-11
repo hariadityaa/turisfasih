@@ -63,3 +63,51 @@ describe('composeNumber (zh)', () => {
     expect(w.native).toBe(native);
   });
 });
+
+describe('composeNumber (id)', () => {
+  const read = <T>(f: string) => JSON.parse(readFileSync(new URL(`../../content/id/${f}`, import.meta.url), 'utf8')) as T;
+  const id = read<Numbers>('numbers.json');
+  const idMeta = read<PackMeta>('pack.json');
+  const cases: [number, string, string][] = [
+    [10, 'sepuluh', 'seh-poo-loo'],
+    [15, 'lima belas', 'lee-mah beh-lahs'],
+    [21, 'dua puluh satu', 'doo-ah poo-loo sah-too'],
+    [100, 'seratus', 'seh-rah-toos'],
+    [115, 'seratus lima belas', 'seh-rah-toos lee-mah beh-lahs'],
+    [250, 'dua ratus lima puluh', 'doo-ah rah-toos lee-mah poo-loo'],
+    [1100, 'seribu seratus', 'seh-ree-boo seh-rah-toos'],
+    [2500, 'dua ribu lima ratus', 'doo-ah ree-boo lee-mah rah-toos'],
+    [12000, 'dua belas ribu', 'doo-ah beh-lahs ree-boo'],
+    [100000, 'seratus ribu', 'seh-rah-toos ree-boo'],
+  ];
+  it.each(cases)('%i', (n, native, reading) => {
+    const w = composeNumber(n, id);
+    expect(w.native).toBe(native);
+    expect(w.reading).toBe(reading);
+    expect(w.speak).toBe(native);
+  });
+
+  it('composes every number in range', () => {
+    for (let n = id.range.min; n <= id.range.max; n++) expect(() => composeNumber(n, id)).not.toThrow();
+  });
+
+  it('adds the rupiah unit to prices', () => {
+    const w = composePrice(25000, id, idMeta.currency.unit);
+    expect(w.native).toBe('dua puluh lima ribu rupiah');
+    expect(w.reading).toBe('doo-ah poo-loo lee-mah ree-boo rupiah');
+    expect(w.speak).toBe('dua puluh lima ribu rupiah');
+  });
+
+  it('formats prices per pack currency', () => {
+    expect(formatPrice(25000, idMeta.currency)).toBe('Rp25,000');
+  });
+});
+
+describe('nativeSeparator', () => {
+  it('leaves packs without it unchanged', () => {
+    for (const code of ['ja', 'ko', 'zh']) {
+      const n = JSON.parse(readFileSync(new URL(`../../content/${code}/numbers.json`, import.meta.url), 'utf8')) as Numbers;
+      expect(n.nativeSeparator).toBeUndefined();
+    }
+  });
+});

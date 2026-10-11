@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "code": "id",
+  "name": "Indonesian",
+  "nativeName": "Bahasa Indonesia",
+  "ttsLocale": "id-ID",
+  "readingSystem": "respelling",
+  "scriptSystems": [],
+  "situations": [
+    {
+      "id": "greeting",
+      "label": "Basics"
+    },
+    {
+      "id": "food",
+      "label": "Food and drink"
+    },
+    {
+      "id": "shopping",
+      "label": "Shopping"
+    },
+    {
+      "id": "transport",
+      "label": "Getting around"
+    },
+    {
+      "id": "tickets",
+      "label": "Tickets and trains"
+    },
+    {
+      "id": "hotel",
+      "label": "Hotel"
+    },
+    {
+      "id": "convenience",
+      "label": "Convenience store"
+    },
+    {
+      "id": "health",
+      "label": "Health"
+    },
+    {
+      "id": "emergency",
+      "label": "Emergency"
+    },
+    {
+      "id": "help",
+      "label": "Help"
+    },
+    {
+      "id": "signs",
+      "label": "Signs"
+    }
+  ],
+  "survival": [
+    "p-terima-kasih",
+    "p-permisi",
+    "p-tolong",
+    "p-minta-ini",
+    "p-berapa",
+    "p-bayar-kartu",
+    "p-bon",
+    "p-dimana-toilet",
+    "p-bisa-inggris",
+    "p-tidak-mengerti"
+  ],
+  "currency": {
+    "code": "IDR",
+    "symbol": "Rp",
+    "position": "prefix",
+    "decimals": 0,
+    "unit": {
+      "native": "rupiah",
+      "reading": "rupiah"
+    }
+  },
+  "restDay": 0
+}

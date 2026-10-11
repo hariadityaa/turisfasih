@@ -1,0 +1,929 @@
+{
+  "schemaVersion": 1,
+  "dialogues": [
+    {
+      "id": "d-warung",
+      "title": "Eating at a warung",
+      "situation": "food",
+      "intro": "You stop at a small warung in Yogyakarta. The owner waves you in.",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "speaker": "npc",
+          "native": "Selamat datang. Makan di sini atau dibungkus?",
+          "reading": "seh-lah-maht dah-tahng. mah-kahn dee see-nee ah-tah-oo dee-boong-koos",
+          "english": "Welcome. Eat here or take away?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-makan-di-sini"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-dibungkus"
+            },
+            {
+              "next": "n1b",
+              "good": false,
+              "phraseId": "p-sampai-jumpa",
+              "feedback": "That means goodbye. You just arrived."
+            }
+          ]
+        },
+        "n1b": {
+          "speaker": "npc",
+          "native": "Maaf, makan di sini atau dibungkus?",
+          "reading": "mah-ahf, mah-kahn dee see-nee ah-tah-oo dee-boong-koos",
+          "english": "Sorry, eat here or take away?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-makan-di-sini"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-dibungkus"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "npc",
+          "native": "Silakan. Mau pesan apa?",
+          "reading": "see-lah-kahn. mah-oo peh-sahn ah-pah",
+          "english": "Please. What would you like to order?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-nasi-goreng"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-rekomendasi"
+            },
+            {
+              "next": "n2b",
+              "good": false,
+              "phraseId": "p-dimana-toilet",
+              "feedback": "Not yet. You still need to order."
+            }
+          ]
+        },
+        "n2b": {
+          "speaker": "npc",
+          "native": "Toilet ada di belakang. Mau pesan apa?",
+          "reading": "toy-leht ah-dah dee beh-lah-kahng. mah-oo peh-sahn ah-pah",
+          "english": "The toilet is at the back. What would you like?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-nasi-goreng"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-minta-ini"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "npc",
+          "native": "Mau pedas atau tidak?",
+          "reading": "mah-oo peh-dahs ah-tah-oo tee-dahk",
+          "english": "Spicy or not spicy?",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-sedikit-pedas"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-tidak-pedas"
+            },
+            {
+              "next": "n3b",
+              "good": false,
+              "phraseId": "p-terima-kasih",
+              "feedback": "Polite, but it doesn't answer the question."
+            }
+          ]
+        },
+        "n3b": {
+          "speaker": "npc",
+          "native": "Pedas atau tidak pedas?",
+          "reading": "peh-dahs ah-tah-oo tee-dahk peh-dahs",
+          "english": "Spicy or not spicy?",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-sedikit-pedas"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-tidak-pedas"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "native": "Minumnya apa?",
+          "reading": "mee-noom-nyah ah-pah",
+          "english": "And to drink?",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-air-putih"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "native": "Es teh manis, tolong",
+              "reading": "ehs teh mah-nees, toh-lohng",
+              "english": "Sweet iced tea, please"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "native": "Tidak usah, terima kasih",
+              "reading": "tee-dahk oo-sah, teh-ree-mah kah-see",
+              "english": "No need, thank you"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "native": "Ini pesanannya. Selamat makan!",
+          "reading": "ee-nee peh-sah-nahn-nyah. seh-lah-maht mah-kahn",
+          "english": "Here's your order. Enjoy your meal!",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-terima-kasih"
+            },
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-enak"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "native": "Sudah selesai? Semuanya tiga puluh lima ribu rupiah.",
+          "reading": "soo-dah seh-leh-sie? seh-moo-ah-nyah tee-gah poo-loo lee-mah ree-boo roo-pee-ah",
+          "english": "All done? That's 35,000 rupiah altogether.",
+          "replies": [
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-bayar-tunai"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-bayar-kartu"
+            },
+            {
+              "next": "n6b",
+              "good": false,
+              "phraseId": "p-ambil-ini",
+              "feedback": "You've already ordered. They are asking you to pay."
+            }
+          ]
+        },
+        "n6b": {
+          "speaker": "npc",
+          "native": "Semuanya tiga puluh lima ribu rupiah.",
+          "reading": "seh-moo-ah-nyah tee-gah poo-loo lee-mah ree-boo roo-pee-ah",
+          "english": "That's 35,000 rupiah altogether.",
+          "replies": [
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-bayar-tunai"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-bayar-kartu"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "native": "Terima kasih. Datang lagi, ya!",
+          "reading": "teh-ree-mah kah-see. dah-tahng lah-gee, yah",
+          "english": "Thank you. Come again!",
+          "end": true
+        }
+      }
+    },
+    {
+      "id": "d-taksi",
+      "title": "Taking a taxi",
+      "situation": "transport",
+      "intro": "You wave down a taxi outside the station in Jakarta.",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "speaker": "npc",
+          "native": "Selamat siang. Mau ke mana?",
+          "reading": "seh-lah-maht see-ahng. mah-oo keh mah-nah",
+          "english": "Good day. Where to?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-ke-alamat"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-ke-bandara"
+            },
+            {
+              "next": "n1b",
+              "good": false,
+              "phraseId": "p-sama-sama",
+              "feedback": "That means 'you're welcome'. He asked where you are going."
+            }
+          ]
+        },
+        "n1b": {
+          "speaker": "npc",
+          "native": "Maaf, mau ke mana?",
+          "reading": "mah-ahf, mah-oo keh mah-nah",
+          "english": "Sorry, where to?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-ke-alamat"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-ke-bandara"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "npc",
+          "native": "Baik. Pakai argo atau harga tetap?",
+          "reading": "bah-eek. pah-kie ar-goh ah-tah-oo hahr-gah teh-tahp",
+          "english": "OK. Meter or fixed price?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-argo"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-ongkos"
+            },
+            {
+              "next": "n2b",
+              "good": false,
+              "phraseId": "p-dibungkus",
+              "feedback": "That's for food. He is asking about the meter or a fixed price."
+            }
+          ]
+        },
+        "n2b": {
+          "speaker": "npc",
+          "native": "Pakai argo, ya?",
+          "reading": "pah-kie ar-goh, yah",
+          "english": "Use the meter, OK?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-argo"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "native": "Ya, pakai argo",
+              "reading": "yah, pah-kie ar-goh",
+              "english": "Yes, use the meter"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "npc",
+          "native": "Macet sekali hari ini. Mungkin tiga puluh menit.",
+          "reading": "mah-chet seh-kah-lee hah-ree ee-nee. moong-kin tee-gah poo-loo meh-neet",
+          "english": "Traffic is heavy today. Maybe thirty minutes.",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-tidak-apa-apa"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-apakah-jauh"
+            },
+            {
+              "next": "n3b",
+              "good": false,
+              "phraseId": "p-terlalu-mahal",
+              "feedback": "He didn't mention a price. He told you about the traffic."
+            }
+          ]
+        },
+        "n3b": {
+          "speaker": "npc",
+          "native": "Maaf, jalannya macet. Tidak apa-apa?",
+          "reading": "mah-ahf, jah-lahn-nyah mah-chet. tee-dahk ah-pah ah-pah",
+          "english": "Sorry, the roads are jammed. Is that OK?",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-tidak-apa-apa"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "native": "Baik, silakan",
+              "reading": "bah-eek, see-lah-kahn",
+              "english": "OK, go ahead"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "native": "Kita sudah sampai.",
+          "reading": "kee-tah soo-dah sahm-pie",
+          "english": "We've arrived.",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-berhenti-sini"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-ongkos"
+            },
+            {
+              "next": "n4b",
+              "good": false,
+              "phraseId": "p-tersesat",
+              "feedback": "You are at your stop. You aren't lost."
+            }
+          ]
+        },
+        "n4b": {
+          "speaker": "npc",
+          "native": "Sudah sampai, ya.",
+          "reading": "soo-dah sahm-pie, yah",
+          "english": "We're here.",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-berhenti-sini"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-ongkos"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "native": "Delapan puluh lima ribu rupiah.",
+          "reading": "deh-lah-pahn poo-loo lee-mah ree-boo roo-pee-ah",
+          "english": "85,000 rupiah.",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-bayar-tunai"
+            },
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-qris"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "native": "Terima kasih. Hati-hati, ya!",
+          "reading": "teh-ree-mah kah-see. hah-tee hah-tee, yah",
+          "english": "Thank you. Take care!",
+          "end": true
+        }
+      }
+    },
+    {
+      "id": "d-hotel",
+      "title": "Checking in at a hotel",
+      "situation": "hotel",
+      "intro": "You arrive at a hotel in Bandung after a long day. The receptionist greets you.",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "speaker": "npc",
+          "native": "Selamat sore. Ada yang bisa kami bantu?",
+          "reading": "seh-lah-maht soh-reh. ah-dah yahng bee-sah kah-mee bahn-too",
+          "english": "Good afternoon. How can we help?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-cek-in"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-reservasi"
+            },
+            {
+              "next": "n1b",
+              "good": false,
+              "phraseId": "p-sampai-jumpa",
+              "feedback": "That means goodbye. You are checking in."
+            }
+          ]
+        },
+        "n1b": {
+          "speaker": "npc",
+          "native": "Maaf, mau check-in?",
+          "reading": "mah-ahf, mah-oo chehk-in",
+          "english": "Sorry, would you like to check in?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-cek-in"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-reservasi"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "npc",
+          "native": "Atas nama siapa?",
+          "reading": "ah-tahs nah-mah see-ah-pah",
+          "english": "Under what name?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "native": "Atas nama Smith",
+              "reading": "ah-tahs nah-mah smith",
+              "english": "Under the name Smith"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "native": "Nama saya Smith",
+              "reading": "nah-mah sah-yah smith",
+              "english": "My name is Smith"
+            },
+            {
+              "next": "n2b",
+              "good": false,
+              "phraseId": "p-halo",
+              "feedback": "She asked for your name. A greeting does not answer that."
+            }
+          ]
+        },
+        "n2b": {
+          "speaker": "npc",
+          "native": "Nama Anda, Pak?",
+          "reading": "nah-mah ahn-dah, pahk",
+          "english": "Your name, sir?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "native": "Atas nama Smith",
+              "reading": "ah-tahs nah-mah smith",
+              "english": "Under the name Smith"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "native": "Nama saya Smith",
+              "reading": "nah-mah sah-yah smith",
+              "english": "My name is Smith"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "npc",
+          "native": "Baik. Boleh lihat paspor Anda?",
+          "reading": "bah-eek. boh-leh lee-haht pahs-pohr ahn-dah",
+          "english": "Certainly. May I see your passport?",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-paspor"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "native": "Ya, ini dia",
+              "reading": "yah, ee-nee dee-ah",
+              "english": "Yes, here it is"
+            },
+            {
+              "next": "n3b",
+              "good": false,
+              "phraseId": "p-dua-malam",
+              "feedback": "She hasn't asked about nights yet. She wants your passport."
+            }
+          ]
+        },
+        "n3b": {
+          "speaker": "npc",
+          "native": "Paspornya, ya?",
+          "reading": "pahs-pohr-nyah, yah",
+          "english": "Your passport, please?",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-paspor"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "native": "Ya, ini dia",
+              "reading": "yah, ee-nee dee-ah",
+              "english": "Yes, here it is"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "native": "Berapa malam, Pak?",
+          "reading": "beh-rah-pah mah-lahm, pahk",
+          "english": "How many nights, sir?",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-dua-malam"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "native": "Tiga malam",
+              "reading": "tee-gah mah-lahm",
+              "english": "Three nights"
+            },
+            {
+              "next": "n4b",
+              "good": false,
+              "phraseId": "p-cek-out",
+              "feedback": "You are checking in, not out."
+            }
+          ]
+        },
+        "n4b": {
+          "speaker": "npc",
+          "native": "Berapa malam menginap?",
+          "reading": "beh-rah-pah mah-lahm mehng-ee-nahp",
+          "english": "How many nights will you stay?",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-dua-malam"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "native": "Tiga malam",
+              "reading": "tee-gah mah-lahm",
+              "english": "Three nights"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "native": "Kamar Anda di lantai tiga, nomor tiga nol lima. Sarapan jam enam sampai sepuluh.",
+          "reading": "kah-mar ahn-dah dee lahn-tie tee-gah, noh-mohr tee-gah nohl lee-mah. sah-rah-pahn jahm eh-nahm sahm-pie seh-poo-loo",
+          "english": "Your room is on the third floor, number 305. Breakfast is from six to ten.",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-wifi"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-terima-kasih"
+            },
+            {
+              "next": "n5b",
+              "good": false,
+              "phraseId": "p-ac-rusak",
+              "feedback": "You haven't seen the room yet."
+            }
+          ]
+        },
+        "n5b": {
+          "speaker": "npc",
+          "native": "Silakan lihat kamarnya dulu.",
+          "reading": "see-lah-kahn lee-haht kah-mar-nyah doo-loo",
+          "english": "Please see the room first.",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-wifi"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-terima-kasih"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "native": "Kata sandinya ada di kartu kunci.",
+          "reading": "kah-tah sahn-dee-nyah ah-dah dee kar-too koon-chee",
+          "english": "The password is on the key card.",
+          "replies": [
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-terima-kasih"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "native": "Baik, saya mengerti",
+              "reading": "bah-eek, sah-yah mehng-ehr-tee",
+              "english": "OK, I understand"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "native": "Selamat beristirahat!",
+          "reading": "seh-lah-maht beh-ris-tee-rah-haht",
+          "english": "Enjoy your stay!",
+          "end": true
+        }
+      }
+    },
+    {
+      "id": "d-pasar",
+      "title": "Bargaining at a market",
+      "situation": "shopping",
+      "intro": "You browse batik shirts at a market stall in Yogyakarta.",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "speaker": "npc",
+          "native": "Selamat siang. Cari apa?",
+          "reading": "seh-lah-maht see-ahng. chah-ree ah-pah",
+          "english": "Good day. What are you looking for?",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-lihat-lihat"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "native": "Saya cari baju batik",
+              "reading": "sah-yah chah-ree bah-joo bah-teek",
+              "english": "I'm looking for a batik shirt"
+            },
+            {
+              "next": "n1b",
+              "good": false,
+              "phraseId": "p-maaf",
+              "feedback": "No need to apologise. Say what you want, or that you are just looking."
+            }
+          ]
+        },
+        "n1b": {
+          "speaker": "npc",
+          "native": "Silakan lihat-lihat.",
+          "reading": "see-lah-kahn lee-haht lee-haht",
+          "english": "Please have a look.",
+          "replies": [
+            {
+              "next": "n2",
+              "good": true,
+              "phraseId": "p-lihat-lihat"
+            },
+            {
+              "next": "n2",
+              "good": true,
+              "native": "Saya cari baju batik",
+              "reading": "sah-yah chah-ree bah-joo bah-teek",
+              "english": "I'm looking for a batik shirt"
+            }
+          ]
+        },
+        "n2": {
+          "speaker": "npc",
+          "native": "Ini batik asli. Bagus, kan?",
+          "reading": "ee-nee bah-teek ah-slee. bah-goos, kahn",
+          "english": "This is genuine batik. Nice, isn't it?",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-berapa"
+            },
+            {
+              "next": "n2c",
+              "good": true,
+              "phraseId": "p-ukuran-lain"
+            },
+            {
+              "next": "n2b",
+              "good": false,
+              "phraseId": "p-terlalu-mahal",
+              "feedback": "You haven't heard a price yet. Ask first."
+            }
+          ]
+        },
+        "n2b": {
+          "speaker": "npc",
+          "native": "Harganya seratus lima puluh ribu rupiah.",
+          "reading": "hahr-gah-nyah seh-rah-toos lee-mah poo-loo ree-boo roo-pee-ah",
+          "english": "The price is 150,000 rupiah.",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-terlalu-mahal"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-bisa-kurang"
+            }
+          ]
+        },
+        "n2c": {
+          "speaker": "npc",
+          "native": "Ada. Ukuran besar juga ada.",
+          "reading": "ah-dah. oo-koo-rahn beh-sar joo-gah ah-dah",
+          "english": "Yes. We have a large too.",
+          "replies": [
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-berapa"
+            },
+            {
+              "next": "n3",
+              "good": true,
+              "phraseId": "p-minta-ini"
+            }
+          ]
+        },
+        "n3": {
+          "speaker": "npc",
+          "native": "Seratus lima puluh ribu rupiah.",
+          "reading": "seh-rah-toos lee-mah poo-loo ree-boo roo-pee-ah",
+          "english": "150,000 rupiah.",
+          "replies": [
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-terlalu-mahal"
+            },
+            {
+              "next": "n4",
+              "good": true,
+              "phraseId": "p-bisa-kurang"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "native": "Wah, itu sudah murah, Kak. Tapi boleh seratus tiga puluh ribu.",
+          "reading": "wah, ee-too soo-dah moo-rah, kahk. tah-pee boh-leh seh-rah-toos tee-gah poo-loo ree-boo",
+          "english": "Well, that's already cheap. But you can have it for 130,000.",
+          "replies": [
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-bisa-kurang"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "native": "Seratus dua puluh ribu, ya?",
+              "reading": "seh-rah-toos doo-ah poo-loo ree-boo, yah",
+              "english": "120,000, okay?"
+            },
+            {
+              "next": "n4b",
+              "good": false,
+              "phraseId": "p-qris",
+              "feedback": "Settle the price first. Then ask how to pay."
+            }
+          ]
+        },
+        "n4b": {
+          "speaker": "npc",
+          "native": "Seratus tiga puluh ribu rupiah, ya?",
+          "reading": "seh-rah-toos tee-gah poo-loo ree-boo roo-pee-ah, yah",
+          "english": "130,000 rupiah, okay?",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-ambil-ini"
+            },
+            {
+              "next": "n5",
+              "good": true,
+              "phraseId": "p-bisa-kurang"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "native": "Baik, seratus dua puluh lima ribu. Tidak bisa kurang lagi.",
+          "reading": "bah-eek, seh-rah-toos doo-ah poo-loo lee-mah ree-boo. tee-dahk bee-sah koo-rahng lah-gee",
+          "english": "OK, 125,000. I can't go lower.",
+          "replies": [
+            {
+              "next": "n6",
+              "good": true,
+              "phraseId": "p-ambil-ini"
+            },
+            {
+              "next": "n7",
+              "good": true,
+              "phraseId": "p-lihat-lihat"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "native": "Terima kasih, Kak. Bayarnya bagaimana?",
+          "reading": "teh-ree-mah kah-see, kahk. bah-yar-nyah bah-guy-mah-nah",
+          "english": "Thank you. How would you like to pay?",
+          "replies": [
+            {
+              "next": "n8",
+              "good": true,
+              "phraseId": "p-bayar-tunai"
+            },
+            {
+              "next": "n8",
+              "good": true,
+              "phraseId": "p-qris"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "native": "Baik, terima kasih. Silakan datang lagi.",
+          "reading": "bah-eek, teh-ree-mah kah-see. see-lah-kahn dah-tahng lah-gee",
+          "english": "OK, thank you. Please come again.",
+          "end": true
+        },
+        "n8": {
+          "speaker": "npc",
+          "native": "Terima kasih banyak. Datang lagi, ya!",
+          "reading": "teh-ree-mah kah-see bah-nyahk. dah-tahng lah-gee, yah",
+          "english": "Thank you very much. Come again!",
+          "end": true
+        }
+      }
+    }
+  ]
+}

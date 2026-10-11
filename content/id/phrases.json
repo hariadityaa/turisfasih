@@ -1,0 +1,2560 @@
+{
+  "schemaVersion": 1,
+  "phrases": [
+    {
+      "id": "p-terima-kasih",
+      "native": "Terima kasih",
+      "reading": "teh-ree-mah kah-see",
+      "english": "Thank you",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "thanks",
+        "thank you"
+      ]
+    },
+    {
+      "id": "p-halo",
+      "native": "Halo",
+      "reading": "hah-loh",
+      "english": "Hello",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "hi",
+        "hey"
+      ]
+    },
+    {
+      "id": "p-permisi",
+      "native": "Permisi",
+      "reading": "pehr-mee-see",
+      "english": "Excuse me (to get attention or pass by)",
+      "tags": [
+        "greeting",
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "pardon",
+        "attention",
+        "waiter",
+        "service"
+      ]
+    },
+    {
+      "id": "p-maaf",
+      "native": "Maaf",
+      "reading": "mah-ahf",
+      "english": "Sorry",
+      "tags": [
+        "greeting",
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "apologise",
+        "apologize",
+        "excuse me"
+      ]
+    },
+    {
+      "id": "p-tolong",
+      "native": "Tolong",
+      "reading": "toh-lohng",
+      "english": "Please (asking for help or a favour)",
+      "tags": [
+        "greeting",
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "please",
+        "help"
+      ]
+    },
+    {
+      "id": "p-ya-tidak",
+      "native": "Ya / Tidak",
+      "reading": "yah / tee-dahk",
+      "english": "Yes / No",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "p-selamat-pagi",
+      "native": "Selamat pagi",
+      "reading": "seh-lah-maht pah-gee",
+      "english": "Good morning",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "p-selamat-siang",
+      "native": "Selamat siang",
+      "reading": "seh-lah-maht see-ahng",
+      "english": "Good day (late morning to mid-afternoon)",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "good afternoon",
+        "hello"
+      ]
+    },
+    {
+      "id": "p-selamat-sore",
+      "native": "Selamat sore",
+      "reading": "seh-lah-maht soh-reh",
+      "english": "Good afternoon (mid-afternoon to dusk)",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "good evening"
+      ]
+    },
+    {
+      "id": "p-selamat-malam",
+      "native": "Selamat malam",
+      "reading": "seh-lah-maht mah-lahm",
+      "english": "Good evening / good night",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "p-sama-sama",
+      "native": "Sama-sama",
+      "reading": "sah-mah sah-mah",
+      "english": "You're welcome",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "no problem"
+      ]
+    },
+    {
+      "id": "p-apa-kabar",
+      "native": "Apa kabar?",
+      "reading": "ah-pah kah-bar",
+      "english": "How are you?",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "how are you",
+        "how do you do"
+      ]
+    },
+    {
+      "id": "p-baik",
+      "native": "Baik, terima kasih",
+      "reading": "bah-eek, teh-ree-mah kah-see",
+      "english": "I'm well, thank you",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "fine",
+        "good"
+      ]
+    },
+    {
+      "id": "p-sampai-jumpa",
+      "native": "Sampai jumpa",
+      "reading": "sahm-pie joom-pah",
+      "english": "See you / goodbye",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "bye",
+        "farewell",
+        "see you later"
+      ]
+    },
+    {
+      "id": "p-tidak-apa-apa",
+      "native": "Tidak apa-apa",
+      "reading": "tee-dahk ah-pah ah-pah",
+      "english": "No problem / it's okay",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "never mind",
+        "no worries",
+        "fine"
+      ]
+    },
+    {
+      "id": "p-minta-ini",
+      "native": "Minta yang ini",
+      "reading": "meen-tah yahng ee-nee",
+      "english": "This one, please",
+      "tags": [
+        "food",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "order",
+        "point"
+      ]
+    },
+    {
+      "id": "p-meja-dua",
+      "native": "Meja untuk dua orang",
+      "reading": "meh-jah oon-took doo-ah oh-rahng",
+      "english": "A table for two",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "seat",
+        "party",
+        "reservation"
+      ]
+    },
+    {
+      "id": "p-menu",
+      "native": "Boleh lihat menunya?",
+      "reading": "boh-leh lee-haht meh-noo-nyah",
+      "english": "May I see the menu?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "menu card"
+      ]
+    },
+    {
+      "id": "p-rekomendasi",
+      "native": "Apa rekomendasinya?",
+      "reading": "ah-pah reh-koh-mehn-dah-see-nyah",
+      "english": "What do you recommend?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "suggest",
+        "best",
+        "popular",
+        "special"
+      ]
+    },
+    {
+      "id": "p-air-putih",
+      "native": "Air putih, tolong",
+      "reading": "ah-eer poo-tee, toh-lohng",
+      "english": "Water, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "drink",
+        "mineral water"
+      ]
+    },
+    {
+      "id": "p-nasi-goreng",
+      "native": "Satu nasi goreng",
+      "reading": "sah-too nah-see goh-rehng",
+      "english": "One fried rice, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "order",
+        "nasi",
+        "rice"
+      ]
+    },
+    {
+      "id": "p-sedikit-pedas",
+      "native": "Sedikit pedas saja",
+      "reading": "seh-dee-keet peh-dahs sah-jah",
+      "english": "Just a little spicy",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "chilli",
+        "chili",
+        "sambal",
+        "hot",
+        "mild"
+      ]
+    },
+    {
+      "id": "p-tidak-pedas",
+      "native": "Jangan pedas",
+      "reading": "jah-ngahn peh-dahs",
+      "english": "Not spicy, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "no chilli",
+        "no chili",
+        "sambal",
+        "mild"
+      ]
+    },
+    {
+      "id": "p-makan-di-sini",
+      "native": "Makan di sini",
+      "reading": "mah-kahn dee see-nee",
+      "english": "Eating here",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "dine in",
+        "eat in"
+      ]
+    },
+    {
+      "id": "p-dibungkus",
+      "native": "Tolong dibungkus",
+      "reading": "toh-lohng dee-boong-koos",
+      "english": "To take away, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "takeaway",
+        "takeout",
+        "to go",
+        "pack"
+      ]
+    },
+    {
+      "id": "p-tambah-nasi",
+      "native": "Tambah nasi, tolong",
+      "reading": "tahm-bah nah-see, toh-lohng",
+      "english": "More rice, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "extra",
+        "refill",
+        "another"
+      ]
+    },
+    {
+      "id": "p-enak",
+      "native": "Enak sekali!",
+      "reading": "eh-nahk seh-kah-lee",
+      "english": "Delicious!",
+      "tags": [
+        "food",
+        "greeting"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "tasty",
+        "yummy",
+        "good food"
+      ]
+    },
+    {
+      "id": "p-sudah-cukup",
+      "native": "Sudah cukup, terima kasih",
+      "reading": "soo-dah choo-koop, teh-ree-mah kah-see",
+      "english": "That's enough, thank you",
+      "tags": [
+        "food",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "no more",
+        "enough",
+        "full"
+      ]
+    },
+    {
+      "id": "p-bon",
+      "native": "Minta bonnya",
+      "reading": "meen-tah boh-nyah",
+      "english": "The bill, please",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "check",
+        "pay",
+        "receipt",
+        "tab"
+      ]
+    },
+    {
+      "id": "p-bayar-dimana",
+      "native": "Bayar di mana?",
+      "reading": "bah-yar dee mah-nah",
+      "english": "Where do I pay?",
+      "tags": [
+        "food",
+        "shopping"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "cashier",
+        "counter",
+        "pay"
+      ]
+    },
+    {
+      "id": "p-halal",
+      "native": "Apakah ini halal?",
+      "reading": "ah-pah-kah ee-nee hah-lahl",
+      "english": "Is this halal?",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "muslim",
+        "pork",
+        "religion"
+      ]
+    },
+    {
+      "id": "p-vegetarian",
+      "native": "Saya vegetarian",
+      "reading": "sah-yah veh-geh-tah-ree-ahn",
+      "english": "I'm vegetarian",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "no meat",
+        "veggie"
+      ]
+    },
+    {
+      "id": "p-alergi-kacang",
+      "native": "Saya alergi kacang",
+      "reading": "sah-yah ah-lehr-gee kah-chahng",
+      "english": "I'm allergic to peanuts",
+      "tags": [
+        "health",
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "allergy",
+        "nuts",
+        "peanut"
+      ]
+    },
+    {
+      "id": "h-selamat-datang",
+      "native": "Selamat datang",
+      "reading": "seh-lah-maht dah-tahng",
+      "english": "Welcome (staff greeting, no reply needed)",
+      "tags": [
+        "food",
+        "shopping",
+        "hotel"
+      ],
+      "difficulty": 1,
+      "listen": true
+    },
+    {
+      "id": "h-silakan-duduk",
+      "native": "Silakan duduk",
+      "reading": "see-lah-kahn doo-dook",
+      "english": "Please sit down",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-terima-kasih"
+    },
+    {
+      "id": "h-berapa-orang",
+      "native": "Berapa orang?",
+      "reading": "beh-rah-pah oh-rahng",
+      "english": "How many people?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-meja-dua"
+    },
+    {
+      "id": "h-mau-pesan",
+      "native": "Mau pesan apa?",
+      "reading": "mah-oo peh-sahn ah-pah",
+      "english": "What would you like to order?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-minta-ini"
+    },
+    {
+      "id": "h-di-sini-atau-bungkus",
+      "native": "Makan di sini atau dibungkus?",
+      "reading": "mah-kahn dee see-nee ah-tah-oo dee-boong-koos",
+      "english": "Eat here or take away?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-makan-di-sini"
+    },
+    {
+      "id": "h-pedas",
+      "native": "Mau pedas atau tidak?",
+      "reading": "mah-oo peh-dahs ah-tah-oo tee-dahk",
+      "english": "Spicy or not spicy?",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-sedikit-pedas"
+    },
+    {
+      "id": "h-ada-lagi",
+      "native": "Ada lagi?",
+      "reading": "ah-dah lah-gee",
+      "english": "Anything else?",
+      "tags": [
+        "food",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-sudah-cukup"
+    },
+    {
+      "id": "h-sebentar",
+      "native": "Sebentar, ya",
+      "reading": "seh-behn-tahr, yah",
+      "english": "One moment, please",
+      "tags": [
+        "food",
+        "shopping",
+        "hotel"
+      ],
+      "difficulty": 1,
+      "listen": true
+    },
+    {
+      "id": "h-habis",
+      "native": "Maaf, sudah habis",
+      "reading": "mah-ahf, soo-dah hah-bis",
+      "english": "Sorry, it's sold out",
+      "tags": [
+        "food",
+        "shopping"
+      ],
+      "difficulty": 2,
+      "listen": true
+    },
+    {
+      "id": "p-berapa",
+      "native": "Berapa harganya?",
+      "reading": "beh-rah-pah hahr-gah-nyah",
+      "english": "How much is it?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "price",
+        "cost",
+        "how much"
+      ]
+    },
+    {
+      "id": "p-terlalu-mahal",
+      "native": "Terlalu mahal",
+      "reading": "tehr-lah-loo mah-hahl",
+      "english": "Too expensive",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "pricey",
+        "cheaper"
+      ]
+    },
+    {
+      "id": "p-bisa-kurang",
+      "native": "Bisa kurang?",
+      "reading": "bee-sah koo-rahng",
+      "english": "Can you lower the price?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "discount",
+        "bargain",
+        "haggle",
+        "cheaper",
+        "negotiate"
+      ]
+    },
+    {
+      "id": "p-lebih-murah",
+      "native": "Ada yang lebih murah?",
+      "reading": "ah-dah yahng leh-beeh moo-rah",
+      "english": "Is there anything cheaper?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "cheap",
+        "budget"
+      ]
+    },
+    {
+      "id": "p-lihat-lihat",
+      "native": "Saya lihat-lihat dulu",
+      "reading": "sah-yah lee-haht lee-haht doo-loo",
+      "english": "I'm just looking",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "browse",
+        "no thanks"
+      ]
+    },
+    {
+      "id": "p-coba",
+      "native": "Boleh saya coba?",
+      "reading": "boh-leh sah-yah choh-bah",
+      "english": "May I try it on?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "fitting room",
+        "try",
+        "test"
+      ]
+    },
+    {
+      "id": "p-ukuran-lain",
+      "native": "Ada ukuran lain?",
+      "reading": "ah-dah oo-koo-rahn lah-een",
+      "english": "Do you have another size?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "bigger",
+        "smaller",
+        "clothes",
+        "shoes"
+      ]
+    },
+    {
+      "id": "p-ambil-ini",
+      "native": "Saya ambil yang ini",
+      "reading": "sah-yah ahm-beel yahng ee-nee",
+      "english": "I'll take this one",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "buy",
+        "purchase"
+      ]
+    },
+    {
+      "id": "p-bayar-kartu",
+      "native": "Bisa bayar pakai kartu?",
+      "reading": "bee-sah bah-yar pah-kie kar-too",
+      "english": "Can I pay by card?",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "credit",
+        "debit",
+        "visa",
+        "mastercard"
+      ]
+    },
+    {
+      "id": "p-bayar-tunai",
+      "native": "Saya bayar tunai",
+      "reading": "sah-yah bah-yar too-nie",
+      "english": "I'll pay cash",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "money",
+        "notes"
+      ]
+    },
+    {
+      "id": "p-qris",
+      "native": "Bisa pakai QRIS?",
+      "reading": "bee-sah pah-kie krees",
+      "english": "Can I pay with QRIS?",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "qr",
+        "qr code",
+        "e-wallet",
+        "ewallet",
+        "gopay",
+        "ovo",
+        "dana"
+      ]
+    },
+    {
+      "id": "p-tanpa-kantong",
+      "native": "Tidak usah pakai kantong",
+      "reading": "tee-dahk oo-sah pah-kie kahn-tohng",
+      "english": "I don't need a bag",
+      "tags": [
+        "shopping",
+        "convenience"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "plastic",
+        "carrier",
+        "bag"
+      ]
+    },
+    {
+      "id": "p-minta-struk",
+      "native": "Minta struknya",
+      "reading": "meen-tah strook-nyah",
+      "english": "The receipt, please",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "invoice",
+        "proof"
+      ]
+    },
+    {
+      "id": "p-diskon",
+      "native": "Ada diskon?",
+      "reading": "ah-dah dees-kohn",
+      "english": "Is there a discount?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "sale",
+        "promo",
+        "offer"
+      ]
+    },
+    {
+      "id": "h-cari-apa",
+      "native": "Cari apa?",
+      "reading": "chah-ree ah-pah",
+      "english": "What are you looking for?",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-lihat-lihat"
+    },
+    {
+      "id": "h-harga-pas",
+      "native": "Harga pas",
+      "reading": "hahr-gah pahs",
+      "english": "Fixed price (no bargaining)",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-ambil-ini"
+    },
+    {
+      "id": "h-tunai-atau-kartu",
+      "native": "Tunai atau kartu?",
+      "reading": "too-nie ah-tah-oo kar-too",
+      "english": "Cash or card?",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-bayar-tunai"
+    },
+    {
+      "id": "h-total",
+      "native": "Semuanya lima puluh ribu rupiah",
+      "reading": "seh-moo-ah-nyah lee-mah poo-loo ree-boo roo-pee-ah",
+      "english": "That's 50,000 rupiah altogether",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-bayar-tunai"
+    },
+    {
+      "id": "h-kembalian",
+      "native": "Ini kembaliannya",
+      "reading": "ee-nee kehm-bah-lee-ahn-nyah",
+      "english": "Here's your change",
+      "tags": [
+        "shopping",
+        "food"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-terima-kasih"
+    },
+    {
+      "id": "p-ke-alamat",
+      "native": "Tolong ke alamat ini",
+      "reading": "toh-lohng keh ah-lah-maht ee-nee",
+      "english": "To this address, please",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "taxi",
+        "show phone",
+        "destination",
+        "grab",
+        "gojek"
+      ]
+    },
+    {
+      "id": "p-argo",
+      "native": "Pakai argo, ya",
+      "reading": "pah-kie ar-goh, yah",
+      "english": "Please use the meter",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "taxi",
+        "fare",
+        "meter"
+      ]
+    },
+    {
+      "id": "p-ongkos",
+      "native": "Berapa ongkosnya?",
+      "reading": "beh-rah-pah ohng-kohs-nyah",
+      "english": "What's the fare?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "cost",
+        "price",
+        "how much",
+        "taxi",
+        "bus"
+      ]
+    },
+    {
+      "id": "p-dimana-stasiun",
+      "native": "Di mana stasiun?",
+      "reading": "dee mah-nah stah-see-oon",
+      "english": "Where is the station?",
+      "tags": [
+        "transport",
+        "tickets"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "train",
+        "railway",
+        "mrt"
+      ]
+    },
+    {
+      "id": "p-dimana-halte",
+      "native": "Di mana halte bus?",
+      "reading": "dee mah-nah hahl-teh boos",
+      "english": "Where is the bus stop?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "bus",
+        "transjakarta",
+        "stop"
+      ]
+    },
+    {
+      "id": "p-ke-bandara",
+      "native": "Ke bandara, tolong",
+      "reading": "keh bahn-dah-rah, toh-lohng",
+      "english": "To the airport, please",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "taxi",
+        "flight",
+        "destination"
+      ]
+    },
+    {
+      "id": "p-berhenti-sini",
+      "native": "Berhenti di sini, tolong",
+      "reading": "behr-hehn-tee dee see-nee, toh-lohng",
+      "english": "Stop here, please",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "drop off",
+        "halt"
+      ]
+    },
+    {
+      "id": "p-turun-sini",
+      "native": "Saya turun di sini",
+      "reading": "sah-yah too-roon dee see-nee",
+      "english": "I'll get off here",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "bus",
+        "alight",
+        "exit"
+      ]
+    },
+    {
+      "id": "p-berapa-lama",
+      "native": "Berapa lama?",
+      "reading": "beh-rah-pah lah-mah",
+      "english": "How long will it take?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "duration",
+        "time"
+      ]
+    },
+    {
+      "id": "p-apakah-jauh",
+      "native": "Apakah jauh?",
+      "reading": "ah-pah-kah jah-oo",
+      "english": "Is it far?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "distance"
+      ]
+    },
+    {
+      "id": "p-jalan-kaki",
+      "native": "Bisa jalan kaki?",
+      "reading": "bee-sah jah-lahn kah-kee",
+      "english": "Can I walk there?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "walking",
+        "on foot"
+      ]
+    },
+    {
+      "id": "p-bus-ke",
+      "native": "Apakah bus ini ke sana?",
+      "reading": "ah-pah-kah boos ee-nee keh sah-nah",
+      "english": "Does this bus go there?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "bus",
+        "destination"
+      ]
+    },
+    {
+      "id": "p-tersesat",
+      "native": "Saya tersesat",
+      "reading": "sah-yah tehr-seh-saht",
+      "english": "I'm lost",
+      "tags": [
+        "help",
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "lost",
+        "directions",
+        "wrong way"
+      ]
+    },
+    {
+      "id": "h-lurus-kiri",
+      "native": "Lurus, lalu belok kiri",
+      "reading": "loo-roos, lah-loo beh-lohk kee-ree",
+      "english": "Straight on, then turn left",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-terima-kasih"
+    },
+    {
+      "id": "p-tiket-satu",
+      "native": "Satu tiket, tolong",
+      "reading": "sah-too tee-keht, toh-lohng",
+      "english": "One ticket, please",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "buy",
+        "fare"
+      ]
+    },
+    {
+      "id": "p-tiket-ke",
+      "native": "Tiket ke Yogyakarta, tolong",
+      "reading": "tee-keht keh yohg-yah-kar-tah, toh-lohng",
+      "english": "A ticket to Yogyakarta, please",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "destination",
+        "train",
+        "city"
+      ]
+    },
+    {
+      "id": "p-pulang-pergi",
+      "native": "Pulang pergi",
+      "reading": "poo-lahng pehr-gee",
+      "english": "Return (round trip)",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "round trip",
+        "two way"
+      ]
+    },
+    {
+      "id": "p-sekali-jalan",
+      "native": "Sekali jalan",
+      "reading": "seh-kah-lee jah-lahn",
+      "english": "One way",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "single",
+        "oneway"
+      ]
+    },
+    {
+      "id": "p-dewasa-anak",
+      "native": "Dua dewasa, satu anak",
+      "reading": "doo-ah deh-wah-sah, sah-too ah-nahk",
+      "english": "Two adults, one child",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "family",
+        "kids"
+      ]
+    },
+    {
+      "id": "p-berangkat-jam",
+      "native": "Berangkat jam berapa?",
+      "reading": "beh-rahng-kaht jahm beh-rah-pah",
+      "english": "What time does it leave?",
+      "tags": [
+        "tickets",
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "departure",
+        "schedule",
+        "timetable"
+      ]
+    },
+    {
+      "id": "p-kereta-berikut",
+      "native": "Kapan kereta berikutnya?",
+      "reading": "kah-pahn keh-reh-tah beh-ree-koot-nyah",
+      "english": "When is the next train?",
+      "tags": [
+        "tickets",
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "next",
+        "schedule"
+      ]
+    },
+    {
+      "id": "p-peron",
+      "native": "Peron berapa?",
+      "reading": "peh-rohn beh-rah-pah",
+      "english": "Which platform?",
+      "tags": [
+        "tickets",
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "platform",
+        "track"
+      ]
+    },
+    {
+      "id": "p-tiket-hilang",
+      "native": "Tiket saya hilang",
+      "reading": "tee-keht sah-yah hee-lahng",
+      "english": "I lost my ticket",
+      "tags": [
+        "tickets",
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "lost",
+        "missing"
+      ]
+    },
+    {
+      "id": "h-tujuan",
+      "native": "Tujuan ke mana?",
+      "reading": "too-joo-ahn keh mah-nah",
+      "english": "Where to?",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-tiket-ke"
+    },
+    {
+      "id": "h-berapa-tiket",
+      "native": "Berapa tiket?",
+      "reading": "beh-rah-pah tee-keht",
+      "english": "How many tickets?",
+      "tags": [
+        "tickets"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-tiket-satu"
+    },
+    {
+      "id": "h-peron-tiga",
+      "native": "Peron tiga",
+      "reading": "peh-rohn tee-gah",
+      "english": "Platform three",
+      "tags": [
+        "tickets",
+        "transport"
+      ],
+      "difficulty": 1,
+      "listen": true
+    },
+    {
+      "id": "h-kereta-terlambat",
+      "native": "Keretanya terlambat",
+      "reading": "keh-reh-tah-nyah tehr-lahm-baht",
+      "english": "The train is delayed",
+      "tags": [
+        "tickets",
+        "transport"
+      ],
+      "difficulty": 2,
+      "listen": true
+    },
+    {
+      "id": "p-reservasi",
+      "native": "Saya sudah reservasi",
+      "reading": "sah-yah soo-dah reh-zehr-vah-see",
+      "english": "I have a reservation",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "booking",
+        "check in",
+        "booked"
+      ]
+    },
+    {
+      "id": "p-cek-in",
+      "native": "Saya mau check-in",
+      "reading": "sah-yah mah-oo chehk-in",
+      "english": "I'd like to check in",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "arrive",
+        "register"
+      ]
+    },
+    {
+      "id": "p-cek-out",
+      "native": "Saya mau check-out",
+      "reading": "sah-yah mah-oo chehk-aut",
+      "english": "I'd like to check out",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "leave",
+        "depart"
+      ]
+    },
+    {
+      "id": "p-kamar-kosong",
+      "native": "Ada kamar kosong?",
+      "reading": "ah-dah kah-mar koh-sohng",
+      "english": "Do you have a room available?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "vacancy",
+        "walk in",
+        "empty"
+      ]
+    },
+    {
+      "id": "p-dua-malam",
+      "native": "Untuk dua malam",
+      "reading": "oon-took doo-ah mah-lahm",
+      "english": "For two nights",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "stay",
+        "duration"
+      ]
+    },
+    {
+      "id": "p-paspor",
+      "native": "Ini paspor saya",
+      "reading": "ee-nee pahs-pohr sah-yah",
+      "english": "Here is my passport",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "id",
+        "identity"
+      ]
+    },
+    {
+      "id": "p-wifi",
+      "native": "Apa kata sandi Wi-Fi-nya?",
+      "reading": "ah-pah kah-tah sahn-dee wie-fie-nyah",
+      "english": "What's the Wi-Fi password?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "internet",
+        "password",
+        "wifi",
+        "online"
+      ]
+    },
+    {
+      "id": "p-sarapan",
+      "native": "Sarapan jam berapa?",
+      "reading": "sah-rah-pahn jahm beh-rah-pah",
+      "english": "What time is breakfast?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "morning meal",
+        "buffet"
+      ]
+    },
+    {
+      "id": "p-handuk",
+      "native": "Minta handuk lagi",
+      "reading": "meen-tah hahn-dook lah-gee",
+      "english": "More towels, please",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "towel",
+        "extra",
+        "bathroom"
+      ]
+    },
+    {
+      "id": "p-ac-rusak",
+      "native": "AC-nya tidak dingin",
+      "reading": "ah-seh-nyah tee-dahk ding-in",
+      "english": "The air conditioning isn't cold",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "ac",
+        "aircon",
+        "air conditioner",
+        "broken",
+        "hot room"
+      ]
+    },
+    {
+      "id": "p-air-panas",
+      "native": "Tidak ada air panas",
+      "reading": "tee-dahk ah-dah ah-eer pah-nahs",
+      "english": "There's no hot water",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "shower",
+        "broken"
+      ]
+    },
+    {
+      "id": "p-kunci-hilang",
+      "native": "Kunci kamar saya hilang",
+      "reading": "koon-chee kah-mar sah-yah hee-lahng",
+      "english": "I lost my room key",
+      "tags": [
+        "hotel",
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "locked out",
+        "card",
+        "key card"
+      ]
+    },
+    {
+      "id": "p-titip-koper",
+      "native": "Boleh titip koper?",
+      "reading": "boh-leh tee-teep koh-pehr",
+      "english": "Can I leave my luggage here?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "bag",
+        "suitcase",
+        "storage",
+        "baggage"
+      ]
+    },
+    {
+      "id": "p-panggil-taksi",
+      "native": "Tolong panggilkan taksi",
+      "reading": "toh-lohng pahng-geel-kahn tahk-see",
+      "english": "Please call a taxi",
+      "tags": [
+        "hotel",
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "cab",
+        "ride"
+      ]
+    },
+    {
+      "id": "h-atas-nama",
+      "native": "Atas nama siapa?",
+      "reading": "ah-tahs nah-mah see-ah-pah",
+      "english": "Under what name?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-reservasi"
+    },
+    {
+      "id": "h-lihat-paspor",
+      "native": "Boleh lihat paspor Anda?",
+      "reading": "boh-leh lee-haht pahs-pohr ahn-dah",
+      "english": "May I see your passport?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-paspor"
+    },
+    {
+      "id": "h-berapa-malam",
+      "native": "Berapa malam?",
+      "reading": "beh-rah-pah mah-lahm",
+      "english": "How many nights?",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-dua-malam"
+    },
+    {
+      "id": "h-cek-out-jam",
+      "native": "Check-out jam dua belas",
+      "reading": "chehk-aut jahm doo-ah beh-lahs",
+      "english": "Check-out is at twelve",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2,
+      "listen": true
+    },
+    {
+      "id": "p-panaskan",
+      "native": "Tolong dipanaskan",
+      "reading": "toh-lohng dee-pah-nahs-kahn",
+      "english": "Could you heat this up?",
+      "tags": [
+        "convenience",
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "microwave",
+        "warm"
+      ]
+    },
+    {
+      "id": "p-itu-saja",
+      "native": "Itu saja, terima kasih",
+      "reading": "ee-too sah-jah, teh-ree-mah kah-see",
+      "english": "That's all, thank you",
+      "tags": [
+        "convenience",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "nothing else",
+        "only",
+        "finished"
+      ]
+    },
+    {
+      "id": "p-dimana-atm",
+      "native": "Di mana ATM?",
+      "reading": "dee mah-nah ah-teh-ehm",
+      "english": "Where is the ATM?",
+      "tags": [
+        "convenience",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "cash",
+        "withdraw",
+        "money",
+        "bank"
+      ]
+    },
+    {
+      "id": "p-kartu-sim",
+      "native": "Saya mau beli kartu SIM",
+      "reading": "sah-yah mah-oo beh-lee kar-too seem",
+      "english": "I'd like to buy a SIM card",
+      "tags": [
+        "convenience",
+        "shopping"
+      ],
+      "difficulty": 3,
+      "keywords": [
+        "sim",
+        "data",
+        "phone",
+        "mobile",
+        "prepaid"
+      ]
+    },
+    {
+      "id": "p-pinjam-toilet",
+      "native": "Boleh pinjam toilet?",
+      "reading": "boh-leh peen-jahm toy-leht",
+      "english": "May I use the toilet?",
+      "tags": [
+        "convenience",
+        "help"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "restroom",
+        "bathroom",
+        "wc"
+      ]
+    },
+    {
+      "id": "h-mau-kantong",
+      "native": "Mau pakai kantong?",
+      "reading": "mah-oo pah-kie kahn-tohng",
+      "english": "Do you want a bag?",
+      "tags": [
+        "convenience",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-tanpa-kantong"
+    },
+    {
+      "id": "h-mau-dipanaskan",
+      "native": "Mau dipanaskan?",
+      "reading": "mah-oo dee-pah-nahs-kahn",
+      "english": "Shall I heat it up?",
+      "tags": [
+        "convenience"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-panaskan"
+    },
+    {
+      "id": "p-saya-sakit",
+      "native": "Saya sakit",
+      "reading": "sah-yah sah-kit",
+      "english": "I'm sick",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "ill",
+        "unwell"
+      ]
+    },
+    {
+      "id": "p-butuh-dokter",
+      "native": "Saya butuh dokter",
+      "reading": "sah-yah boo-tooh dohk-tehr",
+      "english": "I need a doctor",
+      "tags": [
+        "health",
+        "emergency"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "physician",
+        "medical"
+      ]
+    },
+    {
+      "id": "p-sakit-kepala",
+      "native": "Kepala saya sakit",
+      "reading": "keh-pah-lah sah-yah sah-kit",
+      "english": "I have a headache",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "head",
+        "migraine"
+      ]
+    },
+    {
+      "id": "p-sakit-perut",
+      "native": "Perut saya sakit",
+      "reading": "peh-root sah-yah sah-kit",
+      "english": "My stomach hurts",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "stomach ache",
+        "belly",
+        "tummy"
+      ]
+    },
+    {
+      "id": "p-demam",
+      "native": "Saya demam",
+      "reading": "sah-yah deh-mahm",
+      "english": "I have a fever",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "temperature",
+        "hot"
+      ]
+    },
+    {
+      "id": "p-mual",
+      "native": "Saya mual",
+      "reading": "sah-yah moo-ahl",
+      "english": "I feel nauseous",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "sick",
+        "vomit",
+        "queasy"
+      ]
+    },
+    {
+      "id": "p-diare",
+      "native": "Saya diare",
+      "reading": "sah-yah dee-ah-reh",
+      "english": "I have diarrhoea",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "diarrhea",
+        "stomach"
+      ]
+    },
+    {
+      "id": "p-batuk",
+      "native": "Saya batuk",
+      "reading": "sah-yah bah-took",
+      "english": "I'm coughing",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "cough",
+        "cold",
+        "flu"
+      ]
+    },
+    {
+      "id": "p-sakit-sini",
+      "native": "Sakit di sini",
+      "reading": "sah-kit dee see-nee",
+      "english": "It hurts here",
+      "tags": [
+        "health",
+        "emergency"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "pain",
+        "point",
+        "ache"
+      ]
+    },
+    {
+      "id": "p-dimana-apotek",
+      "native": "Di mana apotek?",
+      "reading": "dee mah-nah ah-poh-tehk",
+      "english": "Where is the pharmacy?",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "chemist",
+        "drugstore",
+        "medicine"
+      ]
+    },
+    {
+      "id": "p-obat-sakit-kepala",
+      "native": "Ada obat sakit kepala?",
+      "reading": "ah-dah oh-baht sah-kit keh-pah-lah",
+      "english": "Do you have medicine for headaches?",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "painkiller",
+        "paracetamol",
+        "tablet"
+      ]
+    },
+    {
+      "id": "p-punya-alergi",
+      "native": "Saya punya alergi",
+      "reading": "sah-yah poo-nyah ah-lehr-gee",
+      "english": "I have an allergy",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "allergic",
+        "reaction"
+      ]
+    },
+    {
+      "id": "p-dokter-inggris",
+      "native": "Ada dokter yang bisa bahasa Inggris?",
+      "reading": "ah-dah dohk-tehr yahng bee-sah bah-hah-sah ing-grees",
+      "english": "Is there an English-speaking doctor?",
+      "tags": [
+        "health",
+        "help"
+      ],
+      "difficulty": 3,
+      "keywords": [
+        "english",
+        "translator",
+        "interpreter"
+      ]
+    },
+    {
+      "id": "h-sakit-apa",
+      "native": "Sakitnya di mana?",
+      "reading": "sah-kit-nyah dee mah-nah",
+      "english": "Where does it hurt?",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-sakit-sini"
+    },
+    {
+      "id": "h-alergi-obat",
+      "native": "Ada alergi obat?",
+      "reading": "ah-dah ah-lehr-gee oh-baht",
+      "english": "Any drug allergies?",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "listen": true,
+      "replyId": "p-punya-alergi"
+    },
+    {
+      "id": "h-minum-obat",
+      "native": "Obat ini diminum tiga kali sehari, sesudah makan",
+      "reading": "oh-baht ee-nee dee-mee-noom tee-gah kah-lee seh-hah-ree, seh-soo-dah mah-kahn",
+      "english": "Take this medicine three times a day, after meals",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 3,
+      "listen": true
+    },
+    {
+      "id": "p-tolong-darurat",
+      "native": "Tolong!",
+      "reading": "toh-lohng",
+      "english": "Help!",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "emergency",
+        "assist",
+        "danger"
+      ]
+    },
+    {
+      "id": "p-panggil-ambulans",
+      "native": "Panggil ambulans!",
+      "reading": "pahng-geel ahm-boo-lahns",
+      "english": "Call an ambulance!",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "hospital",
+        "paramedic"
+      ]
+    },
+    {
+      "id": "p-panggil-polisi",
+      "native": "Panggil polisi!",
+      "reading": "pahng-geel poh-lee-see",
+      "english": "Call the police!",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "cop",
+        "crime"
+      ]
+    },
+    {
+      "id": "p-kebakaran",
+      "native": "Kebakaran!",
+      "reading": "keh-bah-kah-rahn",
+      "english": "Fire!",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "burning",
+        "smoke"
+      ]
+    },
+    {
+      "id": "p-pencuri",
+      "native": "Ada pencuri!",
+      "reading": "ah-dah pehn-choo-ree",
+      "english": "Thief!",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "robbery",
+        "pickpocket",
+        "stolen",
+        "copet"
+      ]
+    },
+    {
+      "id": "p-dompet-hilang",
+      "native": "Dompet saya hilang",
+      "reading": "dohm-peht sah-yah hee-lahng",
+      "english": "I lost my wallet",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "missing",
+        "purse",
+        "money"
+      ]
+    },
+    {
+      "id": "p-dompet-dicuri",
+      "native": "Dompet saya dicuri",
+      "reading": "dohm-peht sah-yah dee-choo-ree",
+      "english": "My wallet was stolen",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "robbed",
+        "pickpocket",
+        "theft"
+      ]
+    },
+    {
+      "id": "p-paspor-hilang",
+      "native": "Paspor saya hilang",
+      "reading": "pahs-pohr sah-yah hee-lahng",
+      "english": "I lost my passport",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "missing",
+        "travel document"
+      ]
+    },
+    {
+      "id": "p-kantor-polisi",
+      "native": "Di mana kantor polisi?",
+      "reading": "dee mah-nah kahn-tohr poh-lee-see",
+      "english": "Where is the police station?",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "report",
+        "station"
+      ]
+    },
+    {
+      "id": "p-kecelakaan",
+      "native": "Ada kecelakaan",
+      "reading": "ah-dah keh-cheh-lah-kah-ahn",
+      "english": "There's been an accident",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 3,
+      "keywords": [
+        "crash",
+        "collision"
+      ]
+    },
+    {
+      "id": "p-terluka",
+      "native": "Saya terluka",
+      "reading": "sah-yah tehr-loo-kah",
+      "english": "I'm injured",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "hurt",
+        "wound",
+        "bleeding"
+      ]
+    },
+    {
+      "id": "h-apa-hilang",
+      "native": "Apa yang hilang?",
+      "reading": "ah-pah yahng hee-lahng",
+      "english": "What did you lose?",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 1,
+      "listen": true,
+      "replyId": "p-dompet-hilang"
+    },
+    {
+      "id": "h-segera-datang",
+      "native": "Kami segera datang",
+      "reading": "kah-mee seh-geh-rah dah-tahng",
+      "english": "We're coming right away",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "listen": true
+    },
+    {
+      "id": "p-bisa-inggris",
+      "native": "Bisa bahasa Inggris?",
+      "reading": "bee-sah bah-hah-sah ing-grees",
+      "english": "Do you speak English?",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "english",
+        "language",
+        "speak"
+      ]
+    },
+    {
+      "id": "p-tidak-mengerti",
+      "native": "Saya tidak mengerti",
+      "reading": "sah-yah tee-dahk mehng-ehr-tee",
+      "english": "I don't understand",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "understand",
+        "confused"
+      ]
+    },
+    {
+      "id": "p-diulang",
+      "native": "Bisa diulang?",
+      "reading": "bee-sah dee-oo-lahng",
+      "english": "Can you repeat that?",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "again",
+        "say again",
+        "repeat"
+      ]
+    },
+    {
+      "id": "p-pelan-pelan",
+      "native": "Pelan-pelan, tolong",
+      "reading": "peh-lahn peh-lahn, toh-lohng",
+      "english": "Slowly, please",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "slow",
+        "speak slower"
+      ]
+    },
+    {
+      "id": "p-bisa-bantu",
+      "native": "Bisa bantu saya?",
+      "reading": "bee-sah bahn-too sah-yah",
+      "english": "Can you help me?",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "assist",
+        "help"
+      ]
+    },
+    {
+      "id": "p-apa-ini",
+      "native": "Apa ini?",
+      "reading": "ah-pah ee-nee",
+      "english": "What is this?",
+      "tags": [
+        "help",
+        "food",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "what",
+        "identify"
+      ]
+    },
+    {
+      "id": "p-dimana-toilet",
+      "native": "Di mana toilet?",
+      "reading": "dee mah-nah toy-leht",
+      "english": "Where is the toilet?",
+      "tags": [
+        "help"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "restroom",
+        "bathroom",
+        "wc",
+        "lavatory",
+        "loo"
+      ]
+    },
+    {
+      "id": "s-toilet",
+      "native": "Toilet",
+      "reading": "toy-leht",
+      "english": "Toilet",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "wc",
+        "restroom",
+        "bathroom"
+      ]
+    },
+    {
+      "id": "s-pria",
+      "native": "Pria",
+      "reading": "pree-ah",
+      "english": "Men",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "male",
+        "gents",
+        "laki-laki"
+      ]
+    },
+    {
+      "id": "s-wanita",
+      "native": "Wanita",
+      "reading": "wah-nee-tah",
+      "english": "Women",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "female",
+        "ladies",
+        "perempuan"
+      ]
+    },
+    {
+      "id": "s-masuk",
+      "native": "Masuk",
+      "reading": "mah-sook",
+      "english": "Entrance / in",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "enter",
+        "way in"
+      ]
+    },
+    {
+      "id": "s-keluar",
+      "native": "Keluar",
+      "reading": "keh-loo-ahr",
+      "english": "Exit / out",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "way out",
+        "leave"
+      ]
+    },
+    {
+      "id": "s-dorong",
+      "native": "Dorong",
+      "reading": "doh-rohng",
+      "english": "Push",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "door"
+      ]
+    },
+    {
+      "id": "s-tarik",
+      "native": "Tarik",
+      "reading": "tah-reek",
+      "english": "Pull",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "door"
+      ]
+    },
+    {
+      "id": "s-buka",
+      "native": "Buka",
+      "reading": "boo-kah",
+      "english": "Open",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "shop hours"
+      ]
+    },
+    {
+      "id": "s-tutup",
+      "native": "Tutup",
+      "reading": "too-toop",
+      "english": "Closed",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "shut"
+      ]
+    },
+    {
+      "id": "s-dilarang-merokok",
+      "native": "Dilarang merokok",
+      "reading": "dee-lah-rahng meh-roh-kohk",
+      "english": "No smoking",
+      "tags": [
+        "signs"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "smoke",
+        "cigarette",
+        "forbidden"
+      ]
+    },
+    {
+      "id": "s-halte",
+      "native": "Halte",
+      "reading": "hahl-teh",
+      "english": "Bus stop",
+      "tags": [
+        "signs",
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "bus"
+      ]
+    },
+    {
+      "id": "s-stasiun",
+      "native": "Stasiun",
+      "reading": "stah-see-oon",
+      "english": "Station",
+      "tags": [
+        "signs",
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "train"
+      ]
+    },
+    {
+      "id": "s-kasir",
+      "native": "Kasir",
+      "reading": "kah-seer",
+      "english": "Cashier",
+      "tags": [
+        "signs",
+        "shopping"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "pay",
+        "checkout"
+      ]
+    },
+    {
+      "id": "s-halal",
+      "native": "Halal",
+      "reading": "hah-lahl",
+      "english": "Halal",
+      "tags": [
+        "signs",
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "muslim"
+      ]
+    },
+    {
+      "id": "b-senang-bertemu",
+      "native": "Senang bertemu dengan Anda",
+      "reading": "seh-nahng behr-teh-moo deh-ngahn ahn-dah",
+      "english": "Nice to meet you",
+      "tags": [
+        "greeting"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "meet",
+        "introduction"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-sedikit-indonesia",
+      "native": "Saya bisa sedikit bahasa Indonesia",
+      "reading": "sah-yah bee-sah seh-dee-keet bah-hah-sah een-doh-neh-see-ah",
+      "english": "I speak a little Indonesian",
+      "tags": [
+        "help",
+        "greeting"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "language",
+        "learning"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-es-teh",
+      "native": "Es teh manis",
+      "reading": "ehs teh mah-nees",
+      "english": "Sweet iced tea",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "drink",
+        "tea"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-kopi-hitam",
+      "native": "Kopi hitam tanpa gula",
+      "reading": "koh-pee hee-tahm tahn-pah goo-lah",
+      "english": "Black coffee without sugar",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "coffee",
+        "drink",
+        "no sugar"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-tidak-babi",
+      "native": "Tidak pakai babi",
+      "reading": "tee-dahk pah-kie bah-bee",
+      "english": "No pork",
+      "tags": [
+        "food",
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "halal",
+        "muslim",
+        "pig"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-kiri",
+      "native": "Belok kiri",
+      "reading": "beh-lohk kee-ree",
+      "english": "Turn left",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "direction",
+        "left"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-kanan",
+      "native": "Belok kanan",
+      "reading": "beh-lohk kah-nahn",
+      "english": "Turn right",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "direction",
+        "right"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-ojek",
+      "native": "Ojek ke sana berapa?",
+      "reading": "oh-jehk keh sah-nah beh-rah-pah",
+      "english": "How much is a motorbike taxi there?",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "gojek",
+        "grab",
+        "motorcycle",
+        "moto"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-hamil",
+      "native": "Saya sedang hamil",
+      "reading": "sah-yah seh-dahng hah-mil",
+      "english": "I'm pregnant",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "pregnancy",
+        "expecting"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-sejak-kemarin",
+      "native": "Sejak kemarin",
+      "reading": "seh-jahk keh-mah-reen",
+      "english": "Since yesterday",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "when",
+        "began",
+        "started"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-pusing",
+      "native": "Saya pusing",
+      "reading": "sah-yah poo-sing",
+      "english": "I feel dizzy",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1,
+      "keywords": [
+        "dizziness",
+        "faint",
+        "lightheaded"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-gempa",
+      "native": "Ada gempa bumi",
+      "reading": "ah-dah gehm-pah boo-mee",
+      "english": "There's an earthquake",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 3,
+      "keywords": [
+        "quake",
+        "tremor",
+        "shaking"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-kedutaan",
+      "native": "Saya perlu menghubungi kedutaan saya",
+      "reading": "sah-yah pehr-loo mehng-hoo-boo-ngee keh-doo-tah-ahn sah-yah",
+      "english": "I need to contact my embassy",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 3,
+      "keywords": [
+        "consulate",
+        "embassy"
+      ],
+      "book": true
+    },
+    {
+      "id": "b-telepon-112",
+      "native": "Telepon 112 (nomor darurat)",
+      "reading": "teh-leh-pohn sah-too sah-too doo-ah",
+      "english": "Call 112 (emergency number)",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2,
+      "keywords": [
+        "emergency number",
+        "hotline",
+        "phone"
+      ],
+      "book": true
+    }
+  ]
+}

@@ -24,6 +24,7 @@ h1, h2, h3 { font-weight: 600; line-height: 1.2; }
 /* The native-script font follows the current pack. Chinese text must not fall back to Japanese glyphs. */
 :root[data-pack="zh"] { --font-jp: var(--font-zh); }
 :root[data-pack="ko"] { --font-jp: var(--font-ko); }
+:root[data-pack="id"] { --font-jp: var(--font); }
 .jp, .big, .kana-cell b, .tile b.jp { font-family: var(--font-jp); }
 code, kbd, pre, samp { font-family: var(--font-mono); }
 

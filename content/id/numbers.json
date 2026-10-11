@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "range": {
+    "min": 0,
+    "max": 100000
+  },
+  "words": {
+    "0": {
+      "native": "nol",
+      "reading": "nohl"
+    },
+    "1": {
+      "native": "satu",
+      "reading": "sah-too"
+    },
+    "2": {
+      "native": "dua",
+      "reading": "doo-ah"
+    },
+    "3": {
+      "native": "tiga",
+      "reading": "tee-gah"
+    },
+    "4": {
+      "native": "empat",
+      "reading": "ehm-paht"
+    },
+    "5": {
+      "native": "lima",
+      "reading": "lee-mah"
+    },
+    "6": {
+      "native": "enam",
+      "reading": "eh-nahm"
+    },
+    "7": {
+      "native": "tujuh",
+      "reading": "too-joo"
+    },
+    "8": {
+      "native": "delapan",
+      "reading": "deh-lah-pahn"
+    },
+    "9": {
+      "native": "sembilan",
+      "reading": "sehm-bee-lahn"
+    },
+    "10": {
+      "native": "sepuluh",
+      "reading": "seh-poo-loo"
+    },
+    "11": {
+      "native": "sebelas",
+      "reading": "seh-beh-lahs"
+    },
+    "12": {
+      "native": "dua belas",
+      "reading": "doo-ah beh-lahs"
+    },
+    "13": {
+      "native": "tiga belas",
+      "reading": "tee-gah beh-lahs"
+    },
+    "14": {
+      "native": "empat belas",
+      "reading": "ehm-paht beh-lahs"
+    },
+    "15": {
+      "native": "lima belas",
+      "reading": "lee-mah beh-lahs"
+    },
+    "16": {
+      "native": "enam belas",
+      "reading": "eh-nahm beh-lahs"
+    },
+    "17": {
+      "native": "tujuh belas",
+      "reading": "too-joo beh-lahs"
+    },
+    "18": {
+      "native": "delapan belas",
+      "reading": "deh-lah-pahn beh-lahs"
+    },
+    "19": {
+      "native": "sembilan belas",
+      "reading": "sehm-bee-lahn beh-lahs"
+    }
+  },
+  "multipliers": [
+    {
+      "value": 10,
+      "native": "puluh",
+      "reading": "poo-loo",
+      "omitOne": false
+    },
+    {
+      "value": 100,
+      "native": "ratus",
+      "reading": "rah-toos",
+      "omitOne": false
+    },
+    {
+      "value": 1000,
+      "native": "ribu",
+      "reading": "ree-boo",
+      "omitOne": false
+    }
+  ],
+  "overrides": {
+    "100": {
+      "native": "seratus",
+      "reading": "seh-rah-toos"
+    },
+    "1000": {
+      "native": "seribu",
+      "reading": "seh-ree-boo"
+    }
+  },
+  "separator": " ",
+  "nativeSeparator": " ",
+  "priceDrill": {
+    "min": 2000,
+    "max": 100000,
+    "step": 500
+  }
+}

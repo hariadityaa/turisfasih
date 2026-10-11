@@ -53,6 +53,8 @@ export interface Numbers {
   /** Said where a place is skipped, e.g. Mandarin 零 in 一百零五. */
   zero?: Word;
   separator: string;
+  /** Put between native parts, e.g. " " for "dua puluh lima ribu". Unset joins them with no gap. */
+  nativeSeparator?: string;
   priceDrill: { min: number; max: number; step: number };
 }
 

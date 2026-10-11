@@ -16,7 +16,7 @@ const check = (name, ok, extra = '') => { console.log(`${ok ? 'PASS' : 'FAIL'} $
 try {
   await page.goto(base);
   await page.waitForSelector('.welcome button, .bar');
-  if (await page.$('.welcome button')) await page.click('.welcome button');
+  if (await page.$('.welcome button')) await page.click('.welcome button:has([data-pack="ja"])'); // the suite's text checks are Japanese
   await page.waitForSelector('.list .row');
   check('Learn lists topics', (await page.$$('.list .row')).length > 0);
 

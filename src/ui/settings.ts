@@ -66,6 +66,7 @@ export const settingsScreen: Screen = (root) => {
   } });
 
   const installNote = h('p', { class: 'note', 'aria-live': 'polite' });
+  const shareNote = h('p', { class: 'note', 'aria-live': 'polite' });
   const field = (label: string, ctl: Node, extra?: Node) => h('label', { class: 'field' }, h('span', null, label), ctl, extra);
 
   const parts = [
@@ -97,6 +98,8 @@ export const settingsScreen: Screen = (root) => {
     } }, 'Install app') : null,
     installNote,
     h('p', { class: 'note' }, isStandalone() ? 'Running as installed app.' : canInstall() ? 'Install for full-screen offline use.' : 'Not installable from this browser, or already installed.'),
+    h('button', { class: 'btn', onclick: () => void shareApp(shareNote) }, 'Share app'),
+    shareNote,
     h('button', { class: 'btn danger', onclick: async () => {
       if (!confirm(`Erase all ${meta.name} progress on this device? This cannot be undone.`)) return;
       try {
@@ -109,3 +112,16 @@ export const settingsScreen: Screen = (root) => {
   root.append(...parts.filter((x): x is HTMLElement => !!x));
   void voicesReady(400).then(fillVoices);
 };
+
+// Installed apps hide the address bar, so this is the only way to find the link.
+async function shareApp(note: HTMLElement) {
+  const url = new URL(import.meta.env.BASE_URL, location.href).href;
+  note.textContent = '';
+  if (navigator.share) {
+    try { await navigator.share({ title: 'TurisTalk', url }); return; } catch (err) {
+      if ((err as Error).name === 'AbortError') return;
+    }
+  }
+  try { await navigator.clipboard.writeText(url); note.textContent = 'Link copied. Send it to a friend.'; }
+  catch { note.textContent = url; }
+}

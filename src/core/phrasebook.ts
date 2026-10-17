@@ -5,6 +5,7 @@ export const ALL = 'all';
 export const SURVIVAL = 'survival';
 export const HEARD = 'heard';
 export const STARRED = 'starred';
+export const MINE = 'mine';
 
 export interface BookList { key: string; label: string }
 
@@ -18,10 +19,11 @@ export function cleanStars(raw: unknown, pack: Pack): Set<string> {
 export const starredFirst = (phrases: Phrase[], starred: ReadonlySet<string>): Phrase[] =>
   starred.size ? [...phrases.filter((p) => starred.has(p.id)), ...phrases.filter((p) => !starred.has(p.id))] : phrases;
 
-/** The lists after "All", in display order. Empty lists are left out. "Starred" comes first, when anything is starred. */
+/** The lists after "All", in display order. Empty lists are left out. "Starred" comes first, when anything is starred, then "My words". */
 export function bookLists(pack: Pack, starred: ReadonlySet<string> = new Set()): BookList[] {
   const out: BookList[] = [];
   if (bookPhrases(pack, STARRED, starred).length) out.push({ key: STARRED, label: 'Starred' });
+  if (bookPhrases(pack, MINE).length) out.push({ key: MINE, label: 'My words' });
   const n = pack.meta.survival?.length ?? 0;
   if (n) out.push({ key: SURVIVAL, label: `Survival ${n}` });
   if (bookPhrases(pack, HEARD).length) out.push({ key: HEARD, label: 'They say' });
@@ -44,6 +46,7 @@ function plain(pack: Pack, key: string): Phrase[] {
   if (key === ALL) return all;
   if (key === SURVIVAL) return (pack.meta.survival ?? []).map((id) => all.find((p) => p.id === id)).filter((p): p is Phrase => !!p);
   if (key === HEARD) return all.filter((p) => p.listen);
+  if (key === MINE) return all.filter((p) => p.mine);
   return all.filter((p) => !p.listen && p.tags.includes(key));
 }
 

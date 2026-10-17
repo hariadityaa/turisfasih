@@ -36,6 +36,8 @@ export interface Phrase {
   book?: boolean;
   /** Lowercase English synonyms the phrasebook search also matches, e.g. ["lift", "elevator"]. */
   keywords?: string[];
+  /** Added by the user with AI and saved on the device. Always a phrasebook-only phrase. */
+  mine?: true;
 }
 export interface Phrases { schemaVersion: 1; phrases: Phrase[] }
 

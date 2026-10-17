@@ -1,8 +1,11 @@
-import { app, say, toggleStar } from '../app';
-import { ALL, HEARD, bookLists, matchPhrase, bookPhrases, bookSections, translateUrl } from '../core/phrasebook';
+import { app, deleteMine, say, toggleStar } from '../app';
+import { ALL, HEARD, MINE, bookLists, matchPhrase, bookPhrases, bookSections, translateUrl } from '../core/phrasebook';
 import type { Phrase } from '../core/types';
+import { hasKey } from '../platform/aikey';
+import { notify } from '../platform/notice';
 import { stopSpeaking } from '../platform/tts';
 import { keepAwake } from '../platform/wake';
+import { openAddSheet } from './aiword';
 import { h, header, type Screen } from './dom';
 import { langSwitch } from './lang';
 
@@ -36,7 +39,8 @@ export const phraseRow = (p: Phrase, list: string, back: string, onstar: () => v
       h('span', { class: 'answer' }, p.reading),
       h('span', { class: 'script' }, p.native),
       reply ? h('small', { class: 'say' }, `Say back: ${reply.english}`) : null,
-      p.listen && !reply ? h('small', { class: 'tag' }, 'You will hear this') : null),
+      p.listen && !reply ? h('small', { class: 'tag' }, 'You will hear this') : null,
+      p.mine ? h('small', { class: 'tag' }, 'Mine') : null),
     starButton(p, onstar),
     h('button', { class: 'play', 'aria-label': `Play: ${p.english}`, onclick: () => play(p) }, '🔊'));
 };
@@ -57,20 +61,32 @@ export const phrasebookScreen: Screen = (root, q) => {
     const back = `/phrasebook?list=${key}`;
     chips.replaceChildren(...lists.map((l) =>
       h('button', { class: `chip${l.key === key ? ' on' : ''}`, onclick: () => { key = l.key; history.replaceState(null, '', `#${`/phrasebook?list=${key}`}`); paint(); } }, l.label)));
-    note.textContent = key === HEARD ? 'What staff say to you, and what to say back.' : 'Tap a phrase to show it full size, or tap 🔊 to hear it.';
-        list.replaceChildren();
+    note.textContent = key === HEARD ? 'What staff say to you, and what to say back.'
+      : key === MINE ? 'Words you added with AI. Open one to delete it.' : 'Tap a phrase to show it full size, or tap 🔊 to hear it.';
+    list.replaceChildren();
     if (words || key !== ALL) {
       const found = bookPhrases(app.pack, key, app.stars).filter((p) => matchPhrase(p, words));
       list.append(found.length ? h('ul', { class: 'list' }, found.map((p) => phraseRow(p, key, back, paint)))
         : h('p', { class: 'note' }, 'No phrase found. ',
           words ? h('a', { href: translateUrl(app.pack.meta.ttsLocale, search.value.trim()), target: '_blank', rel: 'noopener noreferrer' }, 'Look it up in Google Translate') : null,
           words && !navigator.onLine ? ' (needs internet)' : null));
+      // Only with a key. Without one the phrasebook looks exactly as it always has.
+      if (words && !found.length && hasKey()) list.append(h('button', { class: 'btn', onclick: () => openAddSheet(words, saved) }, `Add '${words}' with AI`));
       return;
     }
     // Everything once: Starred, then phrases you say under their first topic, then what staff say.
     for (const s of bookSections(app.pack, app.stars)) {
       list.append(h('h2', { class: 'sect' }, s.label), h('ul', { class: 'list' }, s.phrases.map((p) => phraseRow(p, s.key, back, paint))));
     }
+  };
+
+  /** After a save: show My words, where the new word is. */
+  const saved = (p: Phrase) => {
+    search.value = '';
+    key = MINE;
+    history.replaceState(null, '', `#/phrasebook?list=${MINE}`);
+    paint();
+    notify(`Saved "${p.english}" to My words.`);
   };
 
   root.append(header('Phrasebook', undefined, langSwitch()), note, search, chips, list);
@@ -106,6 +122,7 @@ export const showScreen: Screen = (root, q) => {
   root.append(
     h('div', { class: 'flash static show' },
       p.listen ? h('small', { class: 'note' }, 'They said') : null,
+      p.mine ? h('small', { class: 'tag' }, 'Mine') : null,
       h('div', { class: 'big show-text', lang: app.pack.meta.ttsLocale }, p.native),
       h('div', { class: 'answer' }, p.reading),
       h('div', { class: 'english' }, p.english)),
@@ -121,5 +138,12 @@ export const showScreen: Screen = (root, q) => {
   }
   paintNav();
   root.append(nav, awakeNote);
+  if (p.mine) {
+    root.append(h('button', { class: 'btn danger', onclick: async () => {
+      if (!confirm(`Delete "${p.english}" from My words?`)) return;
+      try { await deleteMine(p.id); } catch { notify('Could not delete the word. Try again.'); return; }
+      location.hash = `#${back}`;
+    } }, 'Delete from My words'));
+  }
   return () => { release(); stopSpeaking(); };
 };

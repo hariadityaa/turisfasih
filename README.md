@@ -1,6 +1,6 @@
 # TurisTalk
 
-Mobile-first PWA for learning travel-level phrases. No alphabets, just what you say and hear. Packs: Japanese, Mandarin (Traditional characters, Taiwan usage) and Korean (Revised Romanization). It runs fully offline after the first load. No backend, no accounts, no analytics, no third-party requests.
+Mobile-first PWA for learning travel-level phrases. No alphabets, just what you say and hear. Packs: Japanese, Mandarin (Traditional characters, Taiwan usage) and Korean (Revised Romanization). It runs fully offline after the first load. No backend, no accounts, no analytics. The only third-party request is the optional AI words feature, which sends the words you add to Google Gemini.
 
 ## What it does
 
@@ -9,6 +9,20 @@ Mobile-first PWA for learning travel-level phrases. No alphabets, just what you 
 - **Phrasebook**: every phrase by topic, with search. Tap 🔊 to hear one, or tap the phrase to show it full size to staff. "Survival 10" lists the ten phrases that cover most days. "They say" lists staff lines with what to say back.
 - **More practice**: number and price drills, and short branching conversations.
 - **Backup**: JSON export and import in Settings. Progress lives only on the device.
+- **AI words (optional)**: add any word to the phrasebook with your own Gemini key. See below.
+
+## AI words
+
+Optional. Paste a free Gemini key in Settings → AI words (or open a `#setup?gemini=<key>` link, which saves it and strips it from the URL).
+When a phrasebook search finds nothing, "Add '<word>' with AI" asks Gemini for the native text and reading in the current language.
+Preview it with 🔊 and save it to "My words".
+
+- The browser calls Gemini directly (`gemini-3.8-flash`, then `gemini-3.5-flash-lite` on timeout, 429 or 5xx).
+- Saved words live in IndexedDB under `mine:<lang>`. They are phrasebook-only: never in lessons, practice or the learned count.
+- The key lives in localStorage only, so backups never contain it.
+- Words you add are sent to Google Gemini. Nothing else leaves the phone.
+
+Without a key the app looks and works exactly as before.
 
 ## Develop
 

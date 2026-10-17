@@ -11,7 +11,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.sw.json --noEmit",
     "validate": "tsx scripts/validate.ts",
     "test": "vitest run",
-    "e2e": "node e2e/back-links.mjs",
+    "e2e": "node e2e/back-links.mjs && node e2e/ai-words.mjs",
     "icons": "node scripts/make-icons.mjs"
   },
   "dependencies": {

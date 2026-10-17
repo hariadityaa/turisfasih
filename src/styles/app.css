@@ -64,6 +64,12 @@ h2.sect { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter
 .phrase .star { flex: none; width: 48px; font-size: 1.25rem; background: transparent; border: 0; color: var(--text-2); cursor: pointer; }
 .phrase .star[aria-pressed="true"], .star-big[aria-pressed="true"] { color: var(--accent); }
 .show-actions { display: flex; gap: var(--s-2); align-items: center; } .show-actions .btn.star-big { width: 64px; flex: none; }
+.phrase button.grow { font: inherit; text-align: left; background: transparent; border: 0; cursor: pointer; }
+.phrase .option[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--accent); background: var(--surface-2); }
+.phrase .script-big { font-family: var(--font-jp); font-size: 1.5rem; font-weight: 600; }
+.ai-ask { display: flex; gap: var(--s-2); align-items: center; } .ai-ask .search { flex: 1; } .ai-ask .btn { width: auto; flex: none; }
+.guide { margin: var(--s-3) 0; color: var(--text-2); font-size: .875rem; } .guide summary { cursor: pointer; color: var(--text); font-weight: 600; padding: var(--s-2) 0; }
+.guide ol, .guide ul { padding-left: var(--s-6); } .guide a { color: var(--text); }
 .phrase .play { flex: none; width: 56px; font-size: 1.25rem; background: transparent; border: 0; border-left: 1px solid var(--border); color: var(--text); cursor: pointer; }
 
 .btn { display: flex; align-items: center; justify-content: center; gap: var(--s-2); min-height: var(--control-h); padding: 0 var(--s-4); width: 100%;
@@ -134,7 +140,7 @@ h2.sect { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter
 
 
 .field { display: grid; gap: var(--s-1); margin: var(--s-3) 0; } .field.row { display: flex; align-items: center; justify-content: space-between; }
-select, input[type=range], input[type=search] { width: 100%; min-height: var(--control-h); font: inherit; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r); padding: 0 var(--s-3);
+select, input[type=range], input[type=search], input[type=text], input[type=password] { width: 100%; min-height: var(--control-h); font: inherit; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r); padding: 0 var(--s-3);
   transition: background var(--ease), border-color var(--ease); }
 input[type=range] { padding: 0; border: 0; background: none; accent-color: var(--accent); }
 .warn { background: var(--surface-2); color: var(--text); border: 1px solid var(--border-strong); padding: var(--s-3) var(--s-4); border-radius: var(--r); margin: var(--s-2) 0; font-weight: 600; }
@@ -152,7 +158,7 @@ input[type=range] { padding: 0; border: 0; background: none; accent-color: var(-
 .sheet-body { padding: var(--s-2) var(--s-4) calc(var(--s-6) + env(safe-area-inset-bottom)); }
 .sheet-body::before { content: ''; display: block; width: 36px; height: 4px; margin: 0 auto var(--s-2); border-radius: var(--r-pill); background: var(--border-strong); }
 .lang-row { width: 100%; font: inherit; text-align: left; cursor: pointer; }
-.lang-row .native { flex: none; min-width: 3.5em; font-size: 1.5rem; font-weight: 600; }
+.lang-row .native { flex: none; font-size: .875rem; font-weight: 600; }
 .lang-row.on { border-color: var(--text-2); } .lang-row .tick { width: 1em; color: var(--green); font-weight: 600; }
 
 .welcome { display: block; padding: var(--s-12) var(--s-4); max-width: 560px; margin: 0 auto; }

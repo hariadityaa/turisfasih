@@ -1,9 +1,12 @@
 import { app, reloadFromStorage, saveSettingsQuietly, setLanguage, say } from '../app';
+import { aiErrorText, generate } from '../core/gemini';
+import { loadKey, saveKey } from '../platform/aikey';
 import { exportBackup, importBackup } from '../platform/backup';
 import { resetLanguage } from '../platform/db';
 import { notify } from '../platform/notice';
 import { canInstall, install, isStandalone } from '../platform/pwa';
 import { matchingVoices, ttsSupported, voicesReady } from '../platform/tts';
+import { PRIVACY } from './aiword';
 import { h, header, type Screen } from './dom';
 
 export const settingsScreen: Screen = (root) => {
@@ -79,6 +82,7 @@ export const settingsScreen: Screen = (root) => {
     h('button', { class: 'btn', onclick: () => void say(app.pack.phrases.phrases[0].speak ?? app.pack.phrases.phrases[0].native) }, '🔊 Test voice'),
     h('h2', { class: 'sect' }, 'Lessons'),
     field('Card front', dir), field('New phrases per lesson', newN),
+    ...aiSection(),
     h('h2', { class: 'sect' }, 'Backup'),
     h('p', { class: 'note' }, 'Progress lives only on this device. Export a backup now and then.'),
     h('div', { class: 'stack' },
@@ -112,6 +116,52 @@ export const settingsScreen: Screen = (root) => {
   root.append(...parts.filter((x): x is HTMLElement => !!x));
   void voicesReady(400).then(fillVoices);
 };
+
+/** Optional Gemini key for "Add word with AI". Without one, the phrasebook works as it always has. */
+function aiSection(): HTMLElement[] {
+  const key = h('input', { type: 'password', class: 'key', value: loadKey(), autocomplete: 'off', spellcheck: false, 'aria-label': 'Gemini API key', placeholder: 'Paste your key' });
+  const result = h('p', { class: 'note', 'aria-live': 'polite' });
+  const save = () => {
+    try { return saveKey(key.value); } catch { result.textContent = 'Could not save the key. This browser may block storage.'; return null; }
+  };
+  return [
+    h('h2', { class: 'sect' }, 'AI words (optional)'),
+    h('p', { class: 'note' }, 'Add any word to the phrasebook with your own free Gemini key. The key stays on this phone and is never in backups.'),
+    h('label', { class: 'field' }, h('span', null, 'Gemini API key'), key),
+    h('div', { class: 'grades two' },
+      h('button', { class: 'btn primary', onclick: () => {
+        const k = save();
+        if (k !== null) result.textContent = k ? 'Key saved. Search the phrasebook to add a word.' : 'Key removed. AI words are off.';
+      } }, 'Save'),
+      h('button', { class: 'btn', onclick: async () => {
+        const k = key.value.trim();
+        if (!k) { result.textContent = 'Paste a key first.'; return; }
+        if (!navigator.onLine) { result.textContent = 'You are offline. Testing the key needs internet.'; return; }
+        result.textContent = 'Testing…';
+        try {
+          const r = await generate('water', k, app.pack);
+          result.textContent = `✓ ${r.model} works (water: ${r.options[0]?.native ?? 'no answer'}).`;
+        } catch (e) { result.textContent = `✕ ${aiErrorText(e)}`; }
+      } }, 'Test')),
+    result,
+    h('details', { class: 'guide' },
+      h('summary', null, 'How to get a free Gemini key'),
+      h('p', null, "About 2 minutes. You don't need a credit card."),
+      h('ol', null,
+        h('li', null, 'Open ', h('a', { href: 'https://aistudio.google.com/apikey', target: '_blank', rel: 'noopener noreferrer' }, 'aistudio.google.com/apikey'), ' on this phone or a computer.'),
+        h('li', null, 'Sign in with any Google account.'),
+        h('li', null, 'If asked, accept the terms.'),
+        h('li', null, 'Tap ', h('b', null, 'Create API key'), '. If it asks for a project, pick the default one.'),
+        h('li', null, 'Copy the key.'),
+        h('li', null, 'Come back here and paste it into "Gemini API key". Then tap ', h('b', null, 'Save'), ' and ', h('b', null, 'Test'), '.')),
+      h('p', { class: 'note' }, 'Good to know:'),
+      h('ul', { class: 'note' },
+        h('li', null, 'The free key has a daily limit. When it is reached, the app switches to a lighter model.'),
+        h('li', null, 'On the free tier, Google may use what you send to improve its products. Adding billing to the key stops this.'),
+        h('li', null, 'Keep the key private. Anyone with it can use your quota.'))),
+    h('p', { class: 'note' }, PRIVACY),
+  ];
+}
 
 // Installed apps hide the address bar, so this is the only way to find the link.
 async function shareApp(note: HTMLElement) {

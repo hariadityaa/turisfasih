@@ -1,9 +1,10 @@
 import { buildItems } from './core/items';
+import { mergeMine, mineKey, minePhrases } from './core/mine';
 import { cleanStars } from './core/phrasebook';
 import { listPacks, loadPack } from './core/packs';
 import { MASTERED_DAYS, drillReview, isDue, newState, review, startOfDay, type Grade } from './core/srs';
 import { DEFAULTS, cleanSettings, type Settings } from './core/settings';
-import type { Item, Pack, PackMeta } from './core/types';
+import type { Item, Pack, PackMeta, Phrase } from './core/types';
 import { getCards, kvGet, kvSet, putCard, type CardRecord } from './platform/db';
 import { notify } from './platform/notice';
 import { speak, voicesReady } from './platform/tts';
@@ -44,7 +45,7 @@ export async function initApp(): Promise<boolean> {
 
 export async function setLanguage(code: string, persist = true) {
   // Load everything first. If any step fails, the app stays on the language it had.
-  const pack = await loadPack(code);
+  const pack = mergeMine(await loadPack(code), await kvGet<unknown>(mineKey(code)));
   const items = buildItems(pack);
   const cards = await getCards(code);
   const stars = cleanStars(await kvGet<unknown>(`stars:${code}`), pack);
@@ -74,6 +75,18 @@ export function toggleStar(id: string): boolean {
   kvSet(`stars:${app.settings.lang}`, [...app.stars]).catch(saveFailed);
   return on;
 }
+/** Saves the user's words for the current language, then puts them in the pack. Throws if storage fails. */
+async function saveMine(list: Phrase[]) {
+  const code = app.settings.lang;
+  await kvSet(mineKey(code), list);
+  app.pack = mergeMine(await loadPack(code), list);
+}
+export const addMine = (p: Phrase) => saveMine([...minePhrases(app.pack), p]);
+export async function deleteMine(id: string) {
+  await saveMine(minePhrases(app.pack).filter((p) => p.id !== id));
+  if (app.stars.delete(id)) kvSet(`stars:${app.settings.lang}`, [...app.stars]).catch(saveFailed);
+}
+
 export const saveSettings = () => kvSet('settings', app.settings);
 
 const saveFailed = () => notify('Could not save that change. It will reset when you close the app.');

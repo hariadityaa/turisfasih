@@ -1,8 +1,9 @@
 import './styles/app.css';
 import { app, initApp, setLanguage } from './app';
 import { h } from './ui/dom';
+import { consumeSetupLink } from './platform/aikey';
 import { kvGet, kvSet } from './platform/db';
-import { installErrorNotices } from './platform/notice';
+import { installErrorNotices, notify } from './platform/notice';
 import { initPwa, install, isStandalone, waitForInstallPrompt } from './platform/pwa';
 import { route, startRouter } from './router';
 import { dialogueScreen } from './ui/dialogue';
@@ -17,6 +18,8 @@ import { lessonScreen } from './ui/session';
 
 installErrorNotices();
 initPwa();
+// A "#setup?gemini=…" link saves the key and is stripped from the URL before anything else reads it.
+const keyFromLink = consumeSetupLink();
 
 /** First run: blank screen, one question. Picking a language saves it and starts the app. */
 function chooseLanguage(mount: HTMLElement): Promise<void> {
@@ -91,6 +94,7 @@ async function boot() {
   route('/dialogue', dialogueScreen);
   route('/settings', settingsScreen);
   try { await startRouter(shell.querySelector('#main')!); } catch (e) { showFatal(mount, e); }
+  if (keyFromLink) notify('Gemini key saved. Search the phrasebook to add a word.');
 }
 
 void boot();
